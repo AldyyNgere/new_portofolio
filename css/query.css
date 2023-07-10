@@ -1,6 +1,13 @@
 /* FONT SIZES  */
 /* 74.51, 59.60, 47.68, 38.15, 30.52, 24.41, 19.53, 15.63, 12.50, 10.00, 8.00, 6.40 */
 
+:root {
+  --red-color: #e362a2;
+  --orange-color: #fcce54;
+  --blue-color: #b2e5d6;
+  --grey-color: #212529;
+}
+
 /* Tablet (820px) */
 @media (max-width: 51.56em) {
   html {
@@ -11,7 +18,7 @@
     position: absolute;
     top: 100%;
     right: -100%;
-    background-color: green;
+    background-color: var(--red-color);
     width: 30rem;
     height: 100vh;
     display: flex;
@@ -20,6 +27,14 @@
     gap: 3rem;
     padding-top: 3rem;
     transition: 0.3s;
+  }
+
+  .navbar-menu a {
+    color: #fff;
+  }
+
+  .navbar-menu a:hover {
+    color: #fff;
   }
 
   .navbar-btns-box button {

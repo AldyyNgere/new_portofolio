@@ -3,8 +3,10 @@
 
 :root {
   --red-color: #e362a2;
+  --red-dark-color: #cc5892;
   --orange-color: #fcce54;
   --blue-color: #b2e5d6;
+  --grey-color: #212529;
 }
 
 /* ******* */
@@ -35,6 +37,12 @@
   display: inline-block;
   margin-right: 3rem;
   font-size: 1.8rem;
+  color: var(--grey-color);
+  transition: 0.2s;
+}
+
+.navbar-menu a:hover {
+  color: var(--red-color);
 }
 
 .navbar-btns-box button {
@@ -47,10 +55,13 @@
 
 .navbar-btns-box button ion-icon {
   font-size: 2rem;
-  background-color: blue;
+  background-color: var(--red-color);
   color: #fff;
   padding: 0.8rem;
   border-radius: 50%;
+}
+.navbar-btns-box button ion-icon:hover {
+  background-color: var(--red-dark-color);
 }
 
 #menu-btn {
@@ -80,8 +91,9 @@
 
 .header {
   font-size: 5.9rem;
-  line-height: 1;
+  line-height: 1.2;
   margin-bottom: 1.5rem;
+  color: var(--grey-color);
 }
 
 .hero-desc {
@@ -92,7 +104,28 @@
   display: inline-block;
   margin-right: 1.2rem;
   padding: 1.1rem 2rem;
-  background-color: red;
+  /* background-color: red; */
+  border-radius: 0.8rem;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.hero-btn:first-child {
+  background-color: #e362a2;
+  color: #fff;
+}
+
+.hero-btn:first-child:hover {
+  background-color: var(--red-dark-color);
+}
+
+.hero-btn:last-child {
+  background-color: #f1f3f5;
+  color: #495057;
+}
+
+.hero-btn:last-child:hover {
+  background-color: #d9dbdd;
 }
 
 .hero-img {
@@ -100,4 +133,11 @@
   height: auto;
   object-fit: cover;
   object-position: bottom;
+}
+
+.hero-text-box .primary-color {
+  background: #e362a2;
+  background: linear-gradient(to right, #e362a2 0%, #fcce54 89%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
