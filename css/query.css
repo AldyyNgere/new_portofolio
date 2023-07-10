@@ -1,0 +1,58 @@
+/* Tablet (820px) */
+@media (max-width: 51.56em) {
+  html {
+    font-size: 62%;
+  }
+
+  body {
+    /* background-color: red; */
+  }
+
+  .navbar-menu {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    /* background-color: green; */
+    width: 30rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 3rem;
+    transition: 0.3s;
+  }
+
+  .navbar-btns-box button {
+    transition: 0.3s;
+  }
+
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .navbar-menu.nav-active {
+    right: 0;
+  }
+
+  #menu-btn.nav-active {
+    display: none;
+  }
+
+  #close-btn.nav-active {
+    display: inline-block;
+  }
+}
+
+/* Mobile Phone (480px) */
+@media (max-width: 30em) {
+  html {
+    font-size: 59%;
+  }
+
+  .navbar-menu {
+    padding-top: 7rem;
+    width: 100%;
+    gap: 5rem;
+  }
+}
