@@ -1,18 +1,17 @@
+/* FONT SIZES  */
+/* 74.51, 59.60, 47.68, 38.15, 30.52, 24.41, 19.53, 15.63, 12.50, 10.00, 8.00, 6.40 */
+
 /* Tablet (820px) */
 @media (max-width: 51.56em) {
   html {
-    font-size: 62%;
-  }
-
-  body {
-    /* background-color: red; */
+    font-size: 60%;
   }
 
   .navbar-menu {
     position: absolute;
     top: 100%;
     right: -100%;
-    /* background-color: green; */
+    background-color: green;
     width: 30rem;
     height: 100vh;
     display: flex;
@@ -42,6 +41,42 @@
   #close-btn.nav-active {
     display: inline-block;
   }
+
+  .hero-section {
+    padding-top: 15rem;
+  }
+
+  .hero-container {
+    max-width: 90%;
+    margin: 0 8%;
+    column-gap: 5rem;
+    grid-template-columns: 1.3fr 1.2fr;
+  }
+
+  .header {
+    font-size: 38.15px;
+  }
+
+  .hero-btn {
+    display: inline-block;
+    margin-right: 1.2rem;
+    padding: 0.9rem 1.8rem;
+    background-color: red;
+  }
+
+  .hero-img {
+    width: 85%;
+  }
+}
+
+/* Special Tablet sizez/iPad Mini (770px) */
+@media (max-width: 48.12em) {
+  .hero-container {
+    max-width: 90%;
+    margin: 0 8%;
+    column-gap: 3rem;
+    grid-template-columns: 1.5fr 1.2fr;
+  }
 }
 
 /* Mobile Phone (480px) */
@@ -54,5 +89,38 @@
     padding-top: 7rem;
     width: 100%;
     gap: 5rem;
+  }
+
+  .hero-section {
+    padding-top: 13rem;
+  }
+
+  .hero-container {
+    max-width: 90%;
+    margin: 0 8%;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap-reverse;
+  }
+
+  .hero-img-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header {
+    font-size: 30.52px;
+    line-height: 1.2;
+  }
+
+  .hero-btn {
+    display: inline-block;
+    margin-right: 1.2rem;
+    padding: 0.9rem 1.8rem;
+    background-color: red;
+  }
+
+  .hero-img {
+    width: 85%;
   }
 }
