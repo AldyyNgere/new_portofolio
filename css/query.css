@@ -103,6 +103,10 @@
     column-gap: 3rem;
     grid-template-columns: 1.5fr 1.2fr;
   }
+
+  .about-row {
+    max-width: 100%;
+  }
 }
 
 /* Mobile Phone (480px) */
@@ -163,5 +167,18 @@
 
   .about-text-box h3 {
     text-align: center;
+  }
+
+  .skill-row {
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 0 3%;
+  }
+
+  .skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 80%;
   }
 }

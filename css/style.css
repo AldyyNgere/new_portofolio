@@ -147,7 +147,7 @@
 /* ************** */
 
 .about-section {
-  padding-top: 11.5rem;
+  padding-top: 15%;
 }
 
 .about-sub-title {
@@ -181,4 +181,45 @@
 .about-text-box p {
   line-height: 1.7;
   color: var(--grey-color);
+}
+
+/* ************** */
+/* Skill section  */
+/* ************** */
+.skill-section {
+  padding-top: 15%;
+}
+
+.skill-sub-title {
+  margin-bottom: 3rem;
+}
+
+.skill-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin: 0 3%;
+}
+
+.skill {
+  color: var(--grey-color);
+  background: linear-gradient(to right, #e362a2 0%, #fcce54 89%);
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 25%;
+}
+
+.skill svg {
+  width: 7rem;
+  height: auto;
+  margin-bottom: 0.8rem;
+}
+
+.skill h3 {
+  text-align: center;
+  margin-bottom: 1rem;
 }
