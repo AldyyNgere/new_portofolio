@@ -21,3 +21,16 @@ body {
   line-height: 1.5;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.section {
+  height: 100vh;
+}
+
+.sub-title {
+  text-align: center;
+  font-size: 3.8rem;
+  background: #e362a2;
+  background: linear-gradient(to right, #e362a2 0%, #fcce54 89%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

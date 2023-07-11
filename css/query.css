@@ -82,6 +82,17 @@
   .hero-img {
     width: 85%;
   }
+
+  .about-row {
+    max-width: 100%;
+  }
+}
+
+/* Special Tablet sizez/Nest Hub (1025px) */
+@media (max-width: 64.06em) {
+  .about-row {
+    max-width: 90%;
+  }
 }
 
 /* Special Tablet sizez/iPad Mini (770px) */
@@ -137,5 +148,20 @@
 
   .hero-img {
     width: 85%;
+  }
+
+  .about-row {
+    max-width: 100%;
+    display: inline-block;
+  }
+
+  .about-img-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .about-text-box h3 {
+    text-align: center;
   }
 }

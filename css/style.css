@@ -141,3 +141,44 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* ************** */
+/* About section  */
+/* ************** */
+
+.about-section {
+  padding-top: 11.5rem;
+}
+
+.about-sub-title {
+  margin-bottom: 3rem;
+}
+
+.about-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.about-img {
+  width: 80%;
+  height: auto;
+}
+
+.about-text-box {
+  padding-right: 2rem;
+}
+
+.about-text-box h3 {
+  margin-bottom: 1rem;
+  font-size: 2.4rem;
+  color: var(--grey-color);
+}
+
+.about-text-box p {
+  line-height: 1.7;
+  color: var(--grey-color);
+}
