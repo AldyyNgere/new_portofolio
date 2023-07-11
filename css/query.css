@@ -86,6 +86,25 @@
   .about-row {
     max-width: 100%;
   }
+
+  .project-section {
+    padding-top: 10rem;
+  }
+
+  .project-sub-title {
+    margin-bottom: 3rem;
+  }
+
+  .project-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0 1%;
+  }
+
+  .project {
+    max-width: 25%;
+  }
 }
 
 /* Special Tablet sizez/Nest Hub (1025px) */
@@ -106,6 +125,10 @@
 
   .about-row {
     max-width: 100%;
+  }
+
+  .project {
+    max-width: 28%;
   }
 }
 
@@ -180,5 +203,25 @@
     flex-direction: column;
     justify-content: center;
     max-width: 80%;
+  }
+
+  .project-section {
+    padding-top: 10rem;
+  }
+
+  .project-sub-title {
+    margin-bottom: 3rem;
+  }
+
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    padding: 0 1%;
+  }
+
+  .project {
+    max-width: 70%;
   }
 }
