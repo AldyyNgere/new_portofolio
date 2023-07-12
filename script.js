@@ -17,5 +17,29 @@ function navbarFunction() {
   });
 }
 
+// Send Email function
+function sendEmail() {
+  let firstName = document.getElementById("firstName").value;
+  let lastName = document.getElementById("lastName").value;
+  const fullName = `${firstName} ${lastName}`;
+  const params = {
+    from_name: fullName,
+    email_id: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+  emailjs
+    .send("service_whxx3q5", "template_xf2piyz", params)
+    .then(function (res) {
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Your message has been send",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+    });
+  document.forms["contact-form"].reset();
+}
+
 // Call apps
 navbarFunction();

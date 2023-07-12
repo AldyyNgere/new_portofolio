@@ -303,3 +303,75 @@
 .project-btn-box button:hover {
   background-color: #f8eeee;
 }
+
+/* **************** */
+/* Contact section  */
+/* **************** */
+
+.contact-section {
+  padding-top: 10rem;
+  margin: 0 auto;
+  /* margin: 0 8%; */
+}
+
+.contact-sub-title {
+  margin-bottom: 3rem;
+}
+
+.contact-container {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  padding-left: 2rem;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  /* background-color: blue; */
+  width: 50%;
+}
+
+.contact-container form .input-box:not(.input-box:last-child) {
+  margin-bottom: 1rem;
+}
+
+.input-box label {
+  display: block;
+  color: var(--grey-color);
+}
+
+.input-box input:not(.input-box input[type="button"]) {
+  height: 3.5rem;
+  width: 100%;
+  outline: none;
+  padding: 1rem;
+  font-family: inherit;
+  border-radius: 0.2rem;
+  border: solid 1px #ced4da;
+  color: var(--grey-color);
+}
+
+.input-box textarea {
+  width: 100%;
+  outline: none;
+  padding: 1rem;
+  font-family: inherit;
+  border-radius: 0.2rem;
+  border: solid 1px #ced4da;
+  color: var(--grey-color);
+}
+
+.input-btn-box input {
+  padding: 1.1rem 2rem;
+  border-radius: 0.8rem;
+  /* font-weight: 600; */
+  transition: 0.2s;
+  background-color: var(--red-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+.input-btn-box input:hover {
+  background-color: var(--red-dark-color);
+}

@@ -224,4 +224,8 @@
   .project {
     max-width: 70%;
   }
+
+  .contact-container form {
+    width: 80%;
+  }
 }
