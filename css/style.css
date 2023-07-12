@@ -311,7 +311,7 @@
 .contact-section {
   padding-top: 10rem;
   margin: 0 auto;
-  /* margin: 0 8%; */
+  margin-bottom: 5rem;
 }
 
 .contact-sub-title {
@@ -374,4 +374,45 @@
 
 .input-btn-box input:hover {
   background-color: var(--red-dark-color);
+}
+
+/* ******* */
+/* Footer  */
+/* ******* */
+
+.footer {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: var(--grey-color);
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.footer-container .col-1 {
+  padding: 3rem;
+}
+
+.footer-container .col-1 a img {
+  width: 30%;
+  height: auto;
+}
+
+.footer-container .col-2,
+.footer-container .col-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.footer-container .col h3 {
+  color: var(--red-color);
+}
+
+.footer-container .col-3 a {
+  color: var(--grey-color);
 }
