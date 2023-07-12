@@ -8,14 +8,8 @@
     <link rel="stylesheet" href="css/origin.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/query.css" />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- links  end -->
   </head>
   <body>
@@ -96,7 +90,7 @@
     <section class="about-section section" id="about">
       <h2 class="sub-title about-sub-title">About Me</h2>
 
-      <div class="about-row">
+      <div class="about-row" data-aos="fade-down" data-aos-duration="2000">
         <div class="about-img-box">
           <img src="img/about.png" alt="about image" class="about-img" />
         </div>
@@ -119,7 +113,7 @@
       <h2 class="sub-title skill-sub-title">My Skills</h2>
 
       <div class="skill-row">
-        <div class="skill">
+        <div class="skill" data-aos="flip-left" data-aos-duration="2000">
           <div class="center">
             <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.0//EN' 'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
             <svg
@@ -162,7 +156,7 @@
           </p>
         </div>
 
-        <div class="skill">
+        <div class="skill" data-aos="flip-right" data-aos-duration="2000">
           <div class="center">
             <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.0//EN' 'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
             <svg
@@ -204,7 +198,7 @@
           </p>
         </div>
 
-        <div class="skill">
+        <div class="skill" data-aos="flip-left" data-aos-duration="2000">
           <div class="center">
             <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
             <svg
@@ -246,7 +240,7 @@
           </p>
         </div>
 
-        <div class="skill">
+        <div class="skill" data-aos="flip-right" data-aos-duration="2000">
           <div class="center">
             <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
             <svg
@@ -276,7 +270,7 @@
           </p>
         </div>
 
-        <div class="skill">
+        <div class="skill" data-aos="flip-left" data-aos-duration="2000">
           <div class="center">
             <?xml version="1.0" ?><svg
               id="Layer_1"
@@ -396,7 +390,7 @@
       <h2 class="sub-title project-sub-title">My Projects</h2>
 
       <div class="project-container">
-        <div class="project">
+        <div class="project" data-aos="zoom-in" data-aos-duration="2000">
           <div class="project-img-box">
             <img src="img/projects/project (1).png" alt="project" />
           </div>
@@ -417,7 +411,7 @@
           </div>
         </div>
 
-        <div class="project">
+        <div class="project" data-aos="zoom-in" data-aos-duration="2000">
           <div class="project-img-box">
             <img src="img/projects/project (2).png" alt="project" />
           </div>
@@ -438,7 +432,7 @@
           </div>
         </div>
 
-        <div class="project">
+        <div class="project" data-aos="zoom-in" data-aos-duration="2000">
           <div class="project-img-box">
             <img src="img/projects/project (3).png" alt="project" />
           </div>
@@ -466,7 +460,11 @@
     <section class="section contact-section" id="contact">
       <h2 class="contact-sub-title sub-title">Contact Me</h2>
 
-      <div class="contact-container">
+      <div
+        class="contact-container"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <form action="" name="contact-form">
           <div class="input-box">
             <label for="firstName">First Name*</label>
@@ -538,6 +536,20 @@
       })();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: false,
+      });
+    </script>
     <!-- scripts  end -->
   </body>
 </html>
