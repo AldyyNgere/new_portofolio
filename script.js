@@ -15,6 +15,15 @@ function navbarFunction() {
     menuBtn.classList.remove("nav-active");
     closeBtn.classList.remove("nav-active");
   });
+
+  // when click in document
+  document.addEventListener("click", (e) => {
+    if (!menuBtn.contains(e.target) && !navbar.contains(e.target)) {
+      navbar.classList.remove("nav-active");
+      menuBtn.classList.remove("nav-active");
+      closeBtn.classList.remove("nav-active");
+    }
+  });
 }
 
 // Send Email function
